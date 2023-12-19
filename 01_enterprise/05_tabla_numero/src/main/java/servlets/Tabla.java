@@ -19,8 +19,8 @@ public class Tabla extends HttpServlet {
 		response.setContentType("text/html");
 		out.println("<html><body><center>");
 		out.println("<h1>Tabla del " + numero + "</h1>");
-		for (int i=1; i<=10; i++) {
-			out.println("<h4>" + numero + " * " + i + " = " + numero*i + "</h4>");
+		for (int i = 1; i <= 10; i++) {
+			out.println("<h4>" + numero + " * " + i + " = " + numero * i + "</h4>");
 		}
 		out.println("</center></body></html>");
 		out.close();

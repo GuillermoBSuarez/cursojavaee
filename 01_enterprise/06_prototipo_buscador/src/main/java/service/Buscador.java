@@ -19,7 +19,4 @@ public class Buscador {
 				.filter(x->x.getTematica().equals(tematica))
 				.toList();
 	}
-			
-
-
 }
