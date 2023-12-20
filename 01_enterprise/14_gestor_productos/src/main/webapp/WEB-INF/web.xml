@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <servlet>
+    <description></description>
+    <display-name>Gestor</display-name>
+    <servlet-name>Gestor</servlet-name>
+    <servlet-class>servlets.Gestor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Gestor</servlet-name>
+    <url-pattern>/Gestor</url-pattern>
+  </servlet-mapping>
+  <display-name>14_gestor_productos</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>eliminar</display-name>
+    <servlet-name>eliminar</servlet-name>
+    <servlet-class>servlets.eliminar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>eliminar</servlet-name>
+    <url-pattern>/eliminar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>productosPorCategoria</display-name>
+    <servlet-name>productosPorCategoria</servlet-name>
+    <servlet-class>servlets.productosPorCategoria</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productosPorCategoria</servlet-name>
+    <url-pattern>/productosPorCategoria</url-pattern>
+  </servlet-mapping>
+</web-app>

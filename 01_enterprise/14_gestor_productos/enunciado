@@ -1,0 +1,20 @@
+Pantalla inicial:
+1 Nuevo producto
+2 Productos por categoría
+3 Eliminar producto
+
+1. Nombre: ______
+   Precio: ______
+   Categoría: ______
+   Botón Grabar
+   
+2. Categoría: ______
+   Botón Ver
+   
+   2.1 Producto categoría: ___________
+       Tabla con Nombre y Precio
+       Botón Volver a inicial
+   
+3. Nombre: ______
+   Botón Eliminar
+   Botón Volver a inicial
