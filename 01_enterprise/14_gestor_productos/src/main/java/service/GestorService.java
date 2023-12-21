@@ -7,15 +7,15 @@ import model.Producto;
 
 public class GestorService {
 	static List<Producto> productos = new ArrayList<>(List.of(
-			new Producto("nombre 1.1", 1.1, "categoría 1"),
-			new Producto("nombre 2.1", 2.1, "categoría 1"),
-			new Producto("nombre 3.1", 3.1, "categoría 1"),
-			new Producto("nombre 1.2", 1.2, "categoría 2"),
-			new Producto("nombre 2.2", 2.2, "categoría 2"),
-			new Producto("nombre 3.2", 3.2, "categoría 2"),
-			new Producto("nombre 1.3", 1.3, "categoría 3"),
-			new Producto("nombre 2.3", 2.3, "categoría 3"),
-			new Producto("nombre 3.3", 3.3, "categoría 3")));
+			new Producto("nombre11", 1.1, "categoria1"),
+			new Producto("nombre21", 2.1, "categoria1"),
+			new Producto("nombre31", 3.1, "categoria1"),
+			new Producto("nombre12", 1.2, "categoria2"),
+			new Producto("nombre22", 2.2, "categoria2"),
+			new Producto("nombre32", 3.2, "categoria2"),
+			new Producto("nombre13", 1.3, "categoria3"),
+			new Producto("nombre23", 2.3, "categoria3"),
+			new Producto("nombre33", 3.3, "categoria3")));
 	
 	public void grabar(Producto producto) {
 		if (!productos.stream().anyMatch( p -> p.getNombre().equals(producto))) productos.add(producto);

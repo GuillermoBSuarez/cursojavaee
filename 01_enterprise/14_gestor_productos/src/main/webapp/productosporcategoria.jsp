@@ -1,22 +1,30 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" import="model.Producto, java.util.List"%>
+    pageEncoding="UTF-8" import="model.Producto, java.util.List"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Productos por categoría</title>
+<title>Productos por categorÃ­a</title>
 </head>
 <body>
 <center>
-	<%--recuperamos los resultados--%>
-	<%List<Producto> productos = (List<Producto>)request.getAttribute("ProductosPorCategoria");%>
 	<h2>Resultados de <%=request.getParameter("categoria")%></h2>
-	<%for (Producto p:productos) {%>
-		<h3><%=p.getNombre()%></h3>
-		<h4><%=p.getPrecio()%></h4>
-	<%}%>
-	<br>
-	<br>
+
+	<table border="1">
+		<th>
+			<td>Nombre</td>
+			<td>Precio</td>
+		</th>
+	
+		<%--recuperamos los resultados--%>
+		<%List<Producto> productos = (List<Producto>)request.getAttribute("ProductosPorCategoria");%>
+		<%for (Producto p:productos) {%>
+			<tr>
+				<td><%=p.getNombre()%></td>
+				<td><%=p.getPrecio()%></td>
+			</tr>
+		<%}%>
+	</table>
 	<a href="gestor.html">Volver</a> 
 	</center>
 </body>
