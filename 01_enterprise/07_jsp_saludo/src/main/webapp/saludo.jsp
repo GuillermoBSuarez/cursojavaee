@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<center>
+	<div align='center'>
 		<%for (int i=1; i<=6; i++) {%>
 			<h<%=i%>>Primera JSP</h<%=i%>>
 		<%}%>
-	</center>
+	</div>
 </body>
 </html>

@@ -18,7 +18,7 @@ public class GestorService {
 			new Producto("nombre33", 3.3, "categoria3")));
 	
 	public void grabar(Producto producto) {
-		if (!productos.stream().anyMatch( p -> p.getNombre().equals(producto))) productos.add(producto);
+		if (!productos.stream().anyMatch( p -> p.getNombre().equals(producto.getNombre()) )) productos.add(producto);
 	}
 
 	public List<Producto> productosPorCategoria(String categoria) {

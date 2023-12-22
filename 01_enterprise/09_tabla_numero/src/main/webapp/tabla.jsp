@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<center>
+	<div align='center'>
 		<%int num = Integer.parseInt(request.getParameter("numero"));%>
 		<h1>Tabla del <%=num%></h1>
 		<table border="1">
@@ -18,7 +18,7 @@
 				</tr>
 			<%}%>
 		</table>
-	</center>
+	</div>
 	<a href="numero.html">Volver</a>
 </body>
 </html>

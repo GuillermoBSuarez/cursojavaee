@@ -7,7 +7,7 @@
 <title>Tabla de multiplicar JSP</title>
 </head>
 <body>
-	<center>
+	<div align='center'>
 		<table>
 			<%for (int x=1; x<=10; x++) {%>
 				<tr>
@@ -17,6 +17,6 @@
 				</tr>
 			<%}%>
 		</table>	
-	</center>
+	</div>
 </body>
 </html>

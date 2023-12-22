@@ -7,7 +7,7 @@
 <title>Carro de compra</title>
 </head>
 <body>
-<center>
+<div align='center'>
 	<h2>Carro de compra</h2>
 
 	<table border="1">
@@ -34,6 +34,6 @@
 		<%}%>
 	</table>
 	<a href="menu.html">Volver</a> 
-	</center>
+</div>
 </body>
 </html>
