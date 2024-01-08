@@ -9,7 +9,9 @@
 <body>
 	<div align='center'>
 		<h1>Has entrado <%=session.getAttribute("contador")%> veces</h1><br>
+						<%-- ${sessionScope.contador} --%>
 		<h1>Número total de visitas: <%=application.getAttribute("global")%></h1><br>
+									<%-- ${sessionScope.global} --%>
 		<a href="inicio.html">Volver</a>
 	</div>
 </body>
