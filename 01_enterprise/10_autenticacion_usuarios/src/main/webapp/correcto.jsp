@@ -4,11 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Correcto</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<center>
-		<h2>Hola, <%=request.getParameter("usuario")%>, guapo.</h2>
-	</center>
+	<h1>El usuario <%=request.getParameter("usuario") %> es válido</h1>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Grabar Curso</title>
+<title>Crear Producto</title>
 <style type="text/css">
 body {
 	color: purple;
@@ -34,13 +34,14 @@ input {
 </head>
 <body>
 	<div>
-		<h1>Grabar curso</h1>
-		<form action="GuardarServlet" method="get">
-			Nombre curso:<input type="text" name="nombre" placeholder="Nombre">
-			Duración:<input type="text" name="duracion" placeholder="Duración"> 
-			Precio:<input type="text" name="precio" placeholder="Precio"> 
+		<h1>Añadir nuevo curso</h1>
+		<form action="GuardarServlet" method="post">
+			Nombre curso:<input type="text" name="nombre" placeholder="Nombre del curso">
+			Duración curso:<input type="text" name="duracion" placeholder="Duración del curso"> 
+			Precio curso:<input type="text" name="precio" placeholder="Precio del curso"> 
 			<input type="submit" value="Guardar">
 		</form>
+		<br>
 		<a href="menu.html">Salir</a>
 	</div>
 </body>

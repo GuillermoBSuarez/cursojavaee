@@ -8,7 +8,7 @@
 </head>
 <body>
 	<center>
-		<h1>Has entrado <%=session.getAttribute("contador")%> veces</h1>
+		<h1>Has entrado <%=session.getAttribute("contador") %> veces</h1>
 		<br>
 		<a href="inicio.html">Volver</a>
 	</center>

@@ -12,23 +12,28 @@ import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/ContadorServlet")
 public class ContadorServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-
-	protected void service(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		
-		HttpSession session = request.getSession();
-		ServletContext context = request.getServletContext();
-		
-		// recuperamos el contador, si es nulo (primera vez) lo ponemos a 0,
-		// incrementamos y guardamos
-		int contador = session.getAttribute("contador")==null ? 0 : (Integer)session.getAttribute("contador");
-		session.setAttribute("contador", ++contador);
 	
-		int global = context.getAttribute("global")==null ? 0 : (Integer)context.getAttribute("global");
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//pedimos HttpSession y ServletContext
+		HttpSession session=request.getSession();
+		ServletContext context=request.getServletContext();
+		//recuperamos el contador, le sumamos 1 y lo volvemos a guardar
+		//comprobando que sea distinto de null, en caso de ser nulo
+		//se crea a cero
+		int actual=0;
+		int global=0;
+		if(session.getAttribute("contador")!=null) {
+			actual=(Integer)session.getAttribute("contador");
+		}
+		if(context.getAttribute("global")!=null) {
+			global=(Integer)context.getAttribute("global");
+		}
+		/*actual++;
+		session.setAttribute("contador", actual);*/
+		session.setAttribute("contador", ++actual);
 		context.setAttribute("global", ++global);
-
-		// transferimos al jsp
+		//transferir petición a JSP
 		request.getRequestDispatcher("resultado.jsp").forward(request, response);
 	}
+
 }

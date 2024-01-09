@@ -12,21 +12,17 @@
   </servlet-mapping>
   <display-name>10_autenticacion_usuarios</display-name>
   <welcome-file-list>
-    <welcome-file>Entrada</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>EntradaServlet</welcome-file>
+    
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>Entrada</display-name>
-    <servlet-name>Entrada</servlet-name>
-    <servlet-class>servlets.Entrada</servlet-class>
+    <display-name>EntradaServlet</display-name>
+    <servlet-name>EntradaServlet</servlet-name>
+    <servlet-class>servlets.EntradaServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Entrada</servlet-name>
-    <url-pattern>/Entrada</url-pattern>
+    <servlet-name>EntradaServlet</servlet-name>
+    <url-pattern>/EntradaServlet</url-pattern>
   </servlet-mapping>
 </web-app>

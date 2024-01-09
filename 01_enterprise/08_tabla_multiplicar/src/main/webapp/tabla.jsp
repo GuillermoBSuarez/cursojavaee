@@ -4,19 +4,20 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Tabla de multiplicar JSP</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<div align='center'>
-		<table>
-			<%for (int x=1; x<=10; x++) {%>
+	<center>
+		<table border="1">
+			<%for(int i=1;i<=10;i++){%>
 				<tr>
-				<%for (int y=1; y<=10; y++) {%>
-					<td><%=y*x%></td>
-				<%}%>
+					<%for(int k=1;k<=10;k++){ %>
+						<td><%=i*k%></td>
+					<%} %>
 				</tr>
-			<%}%>
-		</table>	
-	</div>
+			<%} %>
+		
+		</table>
+	</center>
 </body>
 </html>

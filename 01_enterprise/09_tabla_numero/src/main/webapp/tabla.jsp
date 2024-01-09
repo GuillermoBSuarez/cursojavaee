@@ -7,18 +7,19 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div align='center'>
-		<%int num = Integer.parseInt(request.getParameter("numero"));%>
+	<center>
+		<%int num=Integer.parseInt(request.getParameter("numero")); %>
 		<h1>Tabla del <%=num%></h1>
 		<table border="1">
-			<%for (int i = 1; i <= 10; i++) {%>
+			<%for(int i=1;i<=10;i++){ %>
 				<tr>
-					<td><%=i%> x <%=num%></td>
+					<td><%=i%>X<%=num%></td>
 					<td><%=i*num%></td>
 				</tr>
-			<%}%>
+			<%} %>
 		</table>
-	</div>
+	</center>
+	<br>
 	<a href="numero.html">Volver</a>
 </body>
 </html>
